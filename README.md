@@ -87,21 +87,18 @@ The app is structured using the following layers:
 **Empty State**
 
 <img src="https://github.com/catercode/Task_manager/assets/47371898/494b554d-2e53-4943-87bc-1452f5eb7b01" alt="Image Description" width="300" height="600">
-<br>
 
 **Data State**
 
 <img src="https://github.com/catercode/Task_manager/assets/47371898/4c9abce9-7450-432e-8c64-a258a3e36098" alt="Image Description" width="300" height="600">
-<br>
+
 **Add Task**
 
 <img src="https://github.com/catercode/Task_manager/assets/47371898/e1f18c3a-2ebd-4750-9031-f112ad6dff00" alt="Image Description" width="300" height="600">
-<br>
 
 **Delete Task**
 
 <img src="https://github.com/catercode/Task_manager/assets/47371898/c140f7a5-f83e-4003-a5f2-520ddec86a5f" alt="Image Description" width="300" height="600">
-<br>
 
 
 
