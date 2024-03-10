@@ -1,0 +1,1 @@
+ /Users/techera/Task_manager/.dart_tool/flutter_build/0f4b3e470c179a927ea0515ee54aee79/native_assets.yaml: 

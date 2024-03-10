@@ -1,0 +1,4 @@
+#Sun Mar 10 19:47:11 GMT 2024
+base.0=/Users/techera/Task_manager/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

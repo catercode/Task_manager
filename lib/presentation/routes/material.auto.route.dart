@@ -15,4 +15,3 @@ class AppRouter extends $AppRouter {
       ];
 }
 
-mixin BottomBarMenuRoute {}

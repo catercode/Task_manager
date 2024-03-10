@@ -4,14 +4,17 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+
 import 'package:responsive_framework/responsive_wrapper.dart';
+
 import 'package:date_format/date_format.dart';
 import 'package:task_manager/application/task_bloc.dart';
+
 import 'package:task_manager/domain/core/func.dart';
 import 'package:task_manager/domain/utils/color_utils.dart';
 import 'package:task_manager/domain/utils/enums.dart';
-
 import 'package:task_manager/infastructure/model/task.model.dart';
+
 
 class AddTaskForm extends StatefulWidget {
   const AddTaskForm({super.key});
@@ -29,6 +32,10 @@ class _AddTaskFormState extends State<AddTaskForm> {
   Widget build(BuildContext context) {
     return BlocBuilder<TaskBloc, TaskState>(
       builder: (context, state) {
+        // if (state.isSuccess == true) {
+        //   print(state.isSuccess);
+        //   Navigator.pop(context);
+        // }
         return Form(
           key: _formKey,
           child: Padding(
@@ -44,7 +51,6 @@ class _AddTaskFormState extends State<AddTaskForm> {
                 ),
                 TextFormField(
                   key: const Key("addTitleField"),
-                  controller: titleController,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderSide: const BorderSide(color: Colors.black),
@@ -103,7 +109,8 @@ class _AddTaskFormState extends State<AddTaskForm> {
                               MaterialStatePropertyAll(Colors.black)),
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          final date = DateTime.now().toString();
+                          final date = formatDate(
+                              DateTime.now(), [yyyy, '-', mm, '-', dd]);
 
                           final task = TaskModel(
                               id: generateId(),
@@ -112,9 +119,6 @@ class _AddTaskFormState extends State<AddTaskForm> {
                               date: date,
                               status: Status.Pending.name);
                           context.read<TaskBloc>().add(AddTask(task: task));
-                          if (state.isSuccess) {
-                            Navigator.pop(context);
-                          }
                         }
                       },
                       child: const Padding(

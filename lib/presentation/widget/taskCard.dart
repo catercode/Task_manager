@@ -5,6 +5,7 @@ import 'package:task_manager/application/task_bloc.dart';
 import 'package:task_manager/domain/utils/color_utils.dart';
 import 'package:task_manager/infastructure/model/task.model.dart';
 
+
 class TaskCardComponent extends StatelessWidget {
   const TaskCardComponent({super.key, required this.task, required this.index});
   final TaskModel task;
@@ -35,7 +36,7 @@ class TaskCardComponent extends StatelessWidget {
                   radius: 25.0,
                   backgroundColor: textPrimaryColor,
                   child: Text(
-                    index.toString(),
+                    "${index + 1}",
                     style: const TextStyle(
                         color: textSecondaryColor,
                         fontWeight: FontWeight.bold,

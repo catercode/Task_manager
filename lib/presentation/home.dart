@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       body: BlocBuilder<TaskBloc, TaskState>(
         builder: (context, state) {
           
-          return !state.isLoading
+          return !state.isLoadingTask
               ? state.task!.isNotEmpty
                   ? TaskListComponent(
                       task: state.task!,

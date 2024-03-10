@@ -69,6 +69,7 @@ The app is structured using the following layers:
    - Flutter Version 3.16.1
    - Run `flutter pub get` to install dependencies.
    - Run the app on an emulator or physical device using `flutter run`.
+   - Run this command to generate freezed models, auto route and config files #dart pub run build_runner build --delete-conflicting-outputs
 
 2. **Adding Tasks:**
    - Tap on the add button at the bottom of the screen.
