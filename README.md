@@ -104,13 +104,13 @@ The app is structured using the following layers:
 <img src="https://github.com/catercode/Task_manager/assets/47371898/c140f7a5-f83e-4003-a5f2-520ddec86a5f" alt="Image Description" width="300" height="600">
 
 
-<br>
+</br>
+</br>
+
+
 **Conclusion:**
 
 Our Task Manager App provides a clean and efficient solution for managing tasks using Flutter, with a focus on clean architecture and BLoC state management. We hope this documentation helps you understand the architecture, features, and usage of the app. If you have any questions or feedback, feel free to reach out to us!
 
-Happy task managing!
-
----
 
 *Note: This documentation provides a high-level overview of the app's architecture, features, and usage. For detailed implementation details, please refer to the source code and comments within the project.*
